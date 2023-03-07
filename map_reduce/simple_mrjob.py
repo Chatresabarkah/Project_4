@@ -4,6 +4,7 @@ import re
 
 WORD_RE = re.compile(r"[\w']+")
 
+
 class FreqCounts(MRJob):
 
     def mapper(self, _, line):
@@ -15,4 +16,4 @@ class FreqCounts(MRJob):
 
 
 if __name__ == '__main__':
-     FreqCounts.run()
+    FreqCounts.run()
